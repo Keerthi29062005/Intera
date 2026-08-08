@@ -1,10 +1,11 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import '../css/home.css';
 
 export default function Navbar() {
   return (
     <nav className="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm">
-      <div className="container">
+      <div className="container-fluid px-4">
         <Link className="navbar-brand text-white fs-3" to="/">
           EA AND HAM 2024
         </Link>

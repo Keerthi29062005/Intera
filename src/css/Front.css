@@ -1,14 +1,59 @@
+#carouselExampleFade {
+  background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
+  border-radius: 12px;
+  overflow: hidden;
+  margin: 15px 20px; /* Slight margin around hero block */
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
 .carousel-image {
-  width: 100%; /* Full width of the container */
-  height: 600px; /* Medium height */
-  object-fit: cover; /* Ensures proportional scaling and cropping */
-  padding: 0; /* Removed padding to prevent unexpected gaps */
+  width: 100%;
+  height: auto;           /* Allows natural height scaling without cropping */
+  max-height: 70vh;       /* Prevents images from taking up too much vertical space */
+  object-fit: contain;    /* Fits the complete image without cropping */
+  background-color: #ffffff; /* Optional: fills empty side-letterboxing if image aspect ratio varies */
+  padding: 0;
 }
 
 @media (max-width: 768px) {
   .carousel-image {
-    height: 300px; /* Adjust height for smaller screens */
+    max-height: 50vh;
   }
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black circle */
+  border-radius: 50%;
+  padding: 18px;
+  background-size: 50% 50%;
+}
+
+.carousel-control-prev-icon:hover,
+.carousel-control-next-icon:hover {
+  background-color: rgba(0, 0, 0, 0.8); /* Darkens on hover */
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  background: none;
+  background-color: transparent;
+  outline: none;
+  border: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.carousel-control-prev:hover,
+.carousel-control-prev:focus,
+.carousel-control-prev:active,
+.carousel-control-next:hover,
+.carousel-control-next:focus,
+.carousel-control-next:active {
+  background: none !important;
+  background-color: transparent !important;
+  outline: none !important;
+  box-shadow: none !important;
+  color: inherit;
 }
 
 .description-title {

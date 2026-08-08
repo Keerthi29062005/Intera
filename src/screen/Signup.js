@@ -6,7 +6,7 @@ import Footer from '../components/Footer';
 
 export default function Signup() {
   const [error, setError] = useState('');
-  const [credentials, setCredentials] = useState({uname:'', rno: '', email: '', password: '' });
+  const [credentials, setCredentials] = useState({ uname: '', rno: '', email: '', password: '' });
   const [success, setSuccess] = useState(false);
 
   const navigate = useNavigate();
@@ -42,7 +42,7 @@ export default function Signup() {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
-          Name:credentials.uname,
+          Name: credentials.uname,
           Roll_no: credentials.rno,
           Email: credentials.email,
           Password: credentials.password,

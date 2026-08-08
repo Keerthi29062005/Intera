@@ -95,10 +95,6 @@ body {
 .navbar {
   z-index: 1000; /* Ensures navbar appears above other elements */
   position: relative; /* Needed for z-index to work */
-  position: fixed; /* Makes it stay at the top */
-    top: 0;
-    left: 0;
-    width: 100%;
 }
 
 
@@ -130,7 +126,7 @@ body {
   }
 }
 
-.container {
+.home-wrapper {
   display: flex;
   flex-wrap: wrap; /* Ensure elements wrap to the next line if they don't fit */
   justify-content: center; /* Center content on smaller screens */

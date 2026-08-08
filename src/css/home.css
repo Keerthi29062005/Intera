@@ -1,0 +1,20 @@
+/* Reset default browser spacing to eliminate white borders */
+body, html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.home-page {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  height: auto;
+  overflow: visible;
+}
+
+.navbar {
+  flex: 0 0 auto;
+  position: relative;
+  width: 100%;
+}
